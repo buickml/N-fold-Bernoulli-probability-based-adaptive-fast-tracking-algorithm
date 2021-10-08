@@ -1,2 +1,7 @@
 # N-fold-Bernoulli-probability-based-adaptive-fast-tracking-algorithm
-Single object tracking algorithm used in AAR task
+Single object tracking algorithm used in AAR task.
+
+The algorithm is mainly designed to handle a situation in which 1) the object has a wide range of scales, 2) the object sometimes has a very small size in the input image, 3) there are some objects similar to the object that need to be detected and tracked, 4) the task can hardly bear the false detection and 5) the task requires real-time tracking in an embedded system. In an unmanned aerial refueling task, 1) the receiver goes through every scale from seeing the refueling drogue to docking, 2) when the distance between the receiver and the tanker is great, the refueling drogue will be very small, 3) some of the clouds in the background and the engine of the tanker aircraft is very similar to the refueling drogue, 4) any mistake in detecting or tracking may lead to a crash, and 5) the system needs real-time operating ability in the embedded system.
+This tracking algorithm also can be used for other single object tracking tasks. However, to get better performance, some modifications are needed experimentlly.
+
+Currently, the is not completely uploaded for the reason: 1) the parameters in the code files are ambiguity and hard to set for the new user. We need to arrange the code and make a proper document for the user to understand the code and set the parameters easily. Mostly, we want to make it configurable by configuring files for the other users; 2) we are expanding our work based on this project.
